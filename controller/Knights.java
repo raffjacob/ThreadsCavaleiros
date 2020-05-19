@@ -142,7 +142,7 @@ public class Knights extends Thread {
 						Porta = "Branca";
 						Mensagens(door, Porta);
 					} else {
-						door = 1 + (int) (Math.random() * 3);
+						door = (int) (Math.random() * 3);
 					}
 				} catch (Exception e) {
 
@@ -156,7 +156,7 @@ public class Knights extends Thread {
 						Porta = "Preta";
 						Mensagens(door, Porta);
 					} else {
-						door = 1 + (int) (Math.random() * 3);
+						door = (int) (Math.random() * 3);
 					}
 				} catch (Exception e) {
 
@@ -170,7 +170,7 @@ public class Knights extends Thread {
 						Porta = "Azul";
 						Mensagens(door, Porta);
 					} else {
-						door = 1 + (int) (Math.random() * 3);
+						door = (int) (Math.random() * 3);
 					}
 				} catch (Exception e) {
 
@@ -184,7 +184,7 @@ public class Knights extends Thread {
 						Porta = "Vermelha";
 						Mensagens(door, Porta);
 					} else {
-						door = 1 + (int) (Math.random() * 3);
+						door = (int) (Math.random() * 3);
 					}
 				} catch (Exception e) {
 
