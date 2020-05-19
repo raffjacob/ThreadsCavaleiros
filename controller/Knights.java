@@ -133,7 +133,7 @@ public class Knights extends Thread {
 	private void Portas() { // As portas com um semáforo cada
 		permitP = false;
 		while (permitP == false) {    //Loop até a thread entrar numa porta
-			int door = (int) (Math.random() * 3);
+			int door = (int) (Math.random() * 4);
 			if (vetP[door] == 0) {
 				try {
 					permitP = porta1.tryAcquire();
@@ -142,7 +142,7 @@ public class Knights extends Thread {
 						Porta = "Branca";
 						Mensagens(door, Porta);
 					} else {
-						door = (int) (Math.random() * 3);
+						door = (int) (Math.random() * 4);
 					}
 				} catch (Exception e) {
 
@@ -156,7 +156,7 @@ public class Knights extends Thread {
 						Porta = "Preta";
 						Mensagens(door, Porta);
 					} else {
-						door = (int) (Math.random() * 3);
+						door = (int) (Math.random() * 4);
 					}
 				} catch (Exception e) {
 
@@ -170,7 +170,7 @@ public class Knights extends Thread {
 						Porta = "Azul";
 						Mensagens(door, Porta);
 					} else {
-						door = (int) (Math.random() * 3);
+						door = (int) (Math.random() * 4);
 					}
 				} catch (Exception e) {
 
@@ -184,7 +184,7 @@ public class Knights extends Thread {
 						Porta = "Vermelha";
 						Mensagens(door, Porta);
 					} else {
-						door = (int) (Math.random() * 3);
+						door = (int) (Math.random() * 4);
 					}
 				} catch (Exception e) {
 
